@@ -57,7 +57,7 @@ public class ForestNotebook{
         if (!animals.contains(animal)) {
             animals.add(animal);
             animalCount+=1;
-            if(animal instanceof Carnivore){
+            if (animal instanceof Carnivore){
                 carnivores.add((Carnivore) animal);
             }
             if (animal instanceof Omnivore){

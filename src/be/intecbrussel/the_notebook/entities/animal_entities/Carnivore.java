@@ -8,8 +8,8 @@ public class Carnivore extends Animal{
         super(name);
     }
 
-    public Carnivore(String name, double weight, double height, double length, boolean carnivore, boolean omnivore, boolean herbivore) {
-        super(name, weight, height, length, carnivore, omnivore, herbivore);
+    public Carnivore(String name, double weight, double height, double length) {
+        super(name, weight, height, length);
     }
 
 

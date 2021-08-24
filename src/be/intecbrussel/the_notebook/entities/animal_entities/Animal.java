@@ -11,21 +11,16 @@ public class Animal {
     private double weight;
     private double height;
     private double length;
-    private boolean carnivore;
-    private boolean omnivore;
-    private boolean herbivore;
 
     public Animal(String name) {
         this.name = name;
     }
-    public Animal(String name, double weight, double height, double length, boolean carnivore, boolean omnivore, boolean herbivore) {
+    public Animal(String name, double weight, double height, double length) {
         this.name = name;
         this.weight = weight;
         this.height = height;
         this.length = length;
-        this.carnivore = carnivore;
-        this.omnivore = omnivore;
-        this.herbivore = herbivore;
+
     }
 
     public String getName() {
@@ -56,29 +51,6 @@ public class Animal {
         this.length = length;
     }
 
-    public boolean isCarnivore() {
-        return carnivore;
-    }
-
-    public void setCarnivore(boolean carnivore) {
-        this.carnivore = carnivore;
-    }
-
-    public boolean isOmnivore() {
-        return omnivore;
-    }
-
-    public void setOmnivore(boolean omnivore) {
-        this.omnivore = omnivore;
-    }
-
-    public boolean isHerbivore() {
-        return herbivore;
-    }
-
-    public void setHerbivore(boolean herbivore) {
-        this.herbivore = herbivore;
-    }
     public void setPlantDiet(Set<Plant> plantDiet){
 
     }

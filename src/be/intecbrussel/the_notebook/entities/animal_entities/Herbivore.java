@@ -12,8 +12,8 @@ public class Herbivore extends Animal{
         super(name);
     }
 
-    public Herbivore(String name, double weight, double height, double length, boolean carnivore, boolean omnivore, boolean herbivore) {
-        super(name, weight, height, length, carnivore, omnivore, herbivore);
+    public Herbivore(String name, double weight, double height, double length) {
+        super(name, weight, height, length);
     }
 
 

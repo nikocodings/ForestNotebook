@@ -39,19 +39,19 @@ public class NatureApp {
 
         //4 carnivores,no duplicates.
 
-        Animal lion = new Carnivore("Lion",190, 1.2, 1.9, true, false, false );
+        Animal lion = new Carnivore("Lion",190, 1.2, 1.9);
         lion.setMaxFoodSize(5);
         bookOfNature.addAnimal(lion);
 
-        Animal honeyBadger = new Carnivore("Honey Badger", 12, 0.26, 60, true, false, false);
+        Animal honeyBadger = new Carnivore("Honey Badger", 12, 0.26, 60);
         honeyBadger.setMaxFoodSize(.3);
         bookOfNature.addAnimal(honeyBadger);
 
-        Animal tiger = new Carnivore("Tiger",210, 130, 3.4, true, false, false);
+        Animal tiger = new Carnivore("Tiger",210, 130, 3.4);
         tiger.setMaxFoodSize(5);
         bookOfNature.addAnimal(tiger);
 
-        Animal elephantSeal = new Carnivore("Elephant Seal", 3450, 4.5, 3.5, true, false, false);
+        Animal elephantSeal = new Carnivore("Elephant Seal", 3450, 4.5, 3.5);
         elephantSeal.setMaxFoodSize(10);
         bookOfNature.addAnimal(elephantSeal);
 
@@ -63,28 +63,28 @@ public class NatureApp {
         plantDiet.add(raspberry);
 
         //2 omnivores, no duplicates.
-        Animal chicken = new Omnivore("Chicken", 0.85, 0.7, 0.4, false, true, false);
+        Animal chicken = new Omnivore("Chicken", 0.85, 0.7, 0.4);
         chicken.setPlantDiet(plantDiet);
         bookOfNature.addAnimal(chicken);
 
-        Animal bear = new Omnivore("Bear", 300, 1.05, 1.9, false, true, false);
+        Animal bear = new Omnivore("Bear", 300, 1.05, 1.9);
         bear.setPlantDiet(plantDiet);
         bookOfNature.addAnimal(bear);
 
         //4 herbivores with 1 duplicate.
-        Animal cow = new Herbivore("Cow", 720, 1.4, 2.4, false, false, true);
+        Animal cow = new Herbivore("Cow", 720, 1.4, 2.4);
         cow.setPlantDiet(plantDiet);
         bookOfNature.addAnimal(cow);
 
-        Animal duplicateCow = new Herbivore("Cow", 720, 1.4, 2.4, false, false, true);
+        Animal duplicateCow = new Herbivore("Cow", 720, 1.4, 2.4);
         duplicateCow.setPlantDiet(plantDiet);
         bookOfNature.addAnimal(duplicateCow);
 
-        Animal elk = new Herbivore("Elk", 350, 1.5, 2.4, false, false, true);
+        Animal elk = new Herbivore("Elk", 350, 1.5, 2.4);
         elk.setPlantDiet(plantDiet);
         bookOfNature.addAnimal(elk);
 
-        Animal buffalo = new Herbivore("Buffalo", 700, 2.5, 2.8, false, false, true);
+        Animal buffalo = new Herbivore("Buffalo", 700, 2.5, 2.8);
         buffalo.setPlantDiet(plantDiet);
         bookOfNature.addAnimal(buffalo);
 

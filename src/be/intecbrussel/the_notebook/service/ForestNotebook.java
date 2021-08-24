@@ -57,13 +57,13 @@ public class ForestNotebook implements Comparable{
         if (!animals.contains(animal)) {
             animals.add(animal);
             animalCount+=1;
-            if(animal.isCarnivore()){
+            if(animal instanceof Carnivore){
                 carnivores.add((Carnivore) animal);
             }
-            if (animal.isOmnivore()){
+            if (animal instanceof Omnivore){
                 omnivores.add((Omnivore) animal);
             }
-            if (animal.isHerbivore()){
+            if (animal instanceof Herbivore){
                 herbivores.add((Herbivore) animal);
             }
         }

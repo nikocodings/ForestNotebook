@@ -7,7 +7,7 @@ import java.util.Set;
 public class Omnivore extends Animal{
 
     private Set<Plant> plantDiet;
-    private double maxFoodSize = getHeight();
+    private double maxFoodSize;
 
     public Omnivore(String name) {
         super(name);
@@ -27,7 +27,6 @@ public class Omnivore extends Animal{
     }
 
     public double getMaxFoodSize() {
-        maxFoodSize=getHeight();
         return maxFoodSize;
     }
 

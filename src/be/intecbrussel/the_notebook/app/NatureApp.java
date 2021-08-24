@@ -40,15 +40,19 @@ public class NatureApp {
         //4 carnivores,no duplicates.
 
         Animal lion = new Carnivore("Lion",190, 1.2, 1.9, true, false, false );
+        lion.setMaxFoodSize(5);
         bookOfNature.addAnimal(lion);
 
         Animal honeyBadger = new Carnivore("Honey Badger", 12, 0.26, 60, true, false, false);
+        honeyBadger.setMaxFoodSize(.3);
         bookOfNature.addAnimal(honeyBadger);
 
         Animal tiger = new Carnivore("Tiger",210, 130, 3.4, true, false, false);
+        tiger.setMaxFoodSize(5);
         bookOfNature.addAnimal(tiger);
 
         Animal elephantSeal = new Carnivore("Elephant Seal", 3450, 4.5, 3.5, true, false, false);
+        elephantSeal.setMaxFoodSize(10);
         bookOfNature.addAnimal(elephantSeal);
 
         //All omnivores and herbivores have the same diet apparently.

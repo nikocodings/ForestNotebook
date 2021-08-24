@@ -82,6 +82,9 @@ public class Animal {
     public void setPlantDiet(Set<Plant> plantDiet){
 
     }
+    public void setMaxFoodSize(double maxFoodSize) {
+
+    }
 
     @Override
     public boolean equals(Object o) {

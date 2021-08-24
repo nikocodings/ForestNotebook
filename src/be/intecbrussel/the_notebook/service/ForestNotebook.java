@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class ForestNotebook implements Comparable{
+public class ForestNotebook{
 
     private List<Carnivore> carnivores = new LinkedList<>();
     private List<Omnivore> omnivores = new LinkedList<>();
@@ -136,9 +136,4 @@ public class ForestNotebook implements Comparable{
         plants.sort(Comparator.comparing(Plant::getHeight).reversed());
     }
 
-
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
 }
